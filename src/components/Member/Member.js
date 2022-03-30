@@ -11,12 +11,14 @@ const Member = () => {
             .then(data => setUserInfo(data.data));
     }, [])
     
+    
     return (
         <div>
             <h2>Name: {userInfo.name}</h2>
             <p>Username : {userInfo.username}</p>
             <p>Phone : {userInfo.phone}</p>
             <p>Email : {userInfo.email}</p>
+            <p>City : {userInfo.address?.city}</p>
             <p>Website : {userInfo.website}</p>
 
         </div>

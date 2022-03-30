@@ -1,10 +1,13 @@
 import React from 'react';
+import { Outlet, useParams } from 'react-router-dom';
 
 const Blog = () => {
+    const {blogId} = useParams()
     return (
         <div>
-            <h3>This Is Blog Page</h3>
-            <p>This is only Blog Pages. in this page should contains only Blog Page content</p>
+            <h3>Single Blog Info</h3>
+            <p>{blogId}</p>
+            
             
         </div>
     );

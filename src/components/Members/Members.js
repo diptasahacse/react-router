@@ -9,7 +9,6 @@ const Members = () => {
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then(usersData => setUsers(usersData.data))
     }, []);
-    console.log(users)
 
     return (
         <div>
