@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import PageNoteFound from './components/PageNotFound/PageNoteFound';
+import Members from './components/Members/Members';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/members' element={<Members></Members>}></Route>
         <Route path='*' element={<PageNoteFound></PageNoteFound>}></Route>
       </Routes>
       
