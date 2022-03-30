@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const MemberCard = ({ user }) => {
     const navigate = useNavigate()
 
@@ -8,7 +8,7 @@ const MemberCard = ({ user }) => {
     
 
     const showFriendDetails =()=>{
-        const path = `/member/${username}_${id}`;
+        const path = `/member/${id}`;
         navigate(path);
         
         
@@ -19,7 +19,6 @@ const MemberCard = ({ user }) => {
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    
                     <Button onClick={showFriendDetails} variant="primary">Details</Button>
                 </Card.Body>
             </Card>
