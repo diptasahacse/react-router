@@ -8,7 +8,7 @@ const MemberCard = ({ user }) => {
     const { id, name, username, phone } = user;
 
     const showFriendDetails =()=>{
-        const path = `/members/${id}`;
+        const path = `/members/${username+"_"+id}`;
         navigate(path)
 
     }

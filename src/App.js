@@ -6,13 +6,15 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import PageNoteFound from './components/PageNotFound/PageNoteFound';
 import Members from './components/Members/Members';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/blogs' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/members' element={<Members></Members>}></Route>
