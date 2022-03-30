@@ -1,15 +1,17 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-
 const MemberCard = ({ user }) => {
-    let navigate = useNavigate();
+    const navigate = useNavigate()
 
     const { id, name, username, phone } = user;
+    
 
     const showFriendDetails =()=>{
-        const path = `/members/${username+"_"+id}`;
-        navigate(path)
+        const path = `/member/${username}_${id}`;
+        navigate(path);
+        
+        
 
     }
     return (
