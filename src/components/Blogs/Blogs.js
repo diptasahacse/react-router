@@ -11,7 +11,7 @@ const Blogs = () => {
             .then(blogs => setBlogs(blogs.data))
 
     }, []);
-    console.log(blogs)
+    
     return (
         <div>
             <h3>All Blogs</h3>

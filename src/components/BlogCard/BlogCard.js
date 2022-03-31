@@ -13,7 +13,7 @@ const BlogCard = ({ blog }) => {
     return (
         <Col>
             <Card>
-                <Button onClick={loadPost} variant="primary" size="sm">Details</Button>
+                <Button onClick={loadPost} variant="primary" size="sm">{id}</Button>
             </Card>
 
 
