@@ -9,6 +9,8 @@ import Members from './components/Members/Members';
 import Header from './components/Header/Header';
 import Member from './components/Member/Member';
 import Blog from './components/Blog/Blog';
+import Countries from './components/Countries/Countries';
+import Country from './components/Country/Country';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         </Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/countries' element={<Countries></Countries>}></Route>
+        <Route path='/countries/:countryName' element={<Country></Country>}></Route>
         <Route path='/members' element={<Members></Members>}></Route>
         <Route path='/member/:memberId' element={<Member></Member>}></Route>
         <Route path='*' element={<PageNoteFound></PageNoteFound>}></Route>

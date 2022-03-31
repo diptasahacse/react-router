@@ -14,6 +14,7 @@ const MyNavBar = () => {
                         
                         <CustomLink  className='nav-link' to="/">Home</CustomLink>
                         <CustomLink  className='nav-link' to="/members">Members</CustomLink>
+                        <CustomLink  className='nav-link' to="/countries">Countries</CustomLink>
                         <CustomLink  className='nav-link' to="/blogs">Blogs</CustomLink>
                         <CustomLink  className='nav-link' to="/about">About</CustomLink>
                         <CustomLink  className='nav-link' to="/contact">Contact Us</CustomLink>
